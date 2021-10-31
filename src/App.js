@@ -10,9 +10,9 @@ const App = () => {
   const config = {
     headers: {'Access-Control-Allow-Origin': "*"}
   }
-
+// https://dev-api.fitnessfuel360.com/app/home
   const fetchData = async() => {
-    const {data} = await axios.get("https://dev-api.fitnessfuel360.com/app/home")
+    const {data} = await axios.get("/home")
     return data
   }
   
