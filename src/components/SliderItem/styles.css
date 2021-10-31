@@ -1,0 +1,29 @@
+.box {
+  display: block;
+  max-width: 200px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+.pdt-title {
+  font-weight: bold;
+}
+.discount {
+  width: fit-content;
+  background-color: rgb(202, 7, 7);
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 0.8em;
+}
+.price {
+  font-weight: bold;
+}
+.sp {
+  color: orange;
+}
+.mrp {
+  text-decoration-line: line-through;
+}

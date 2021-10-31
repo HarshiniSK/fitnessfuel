@@ -1,0 +1,25 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 300px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.sub-title {
+  color: grey;
+}
+.image {
+  border-radius: 10px;
+}
+.content {
+  background-color: azure;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.cta {
+  color: #b27a2f;
+  cursor: pointer;
+}
