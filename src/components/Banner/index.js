@@ -14,7 +14,9 @@ const Banner = ({ item_ }) => {
       {item_.items.map((item, index) => {
         const { url } = item;
         return (
-          <div key={index}>{<img src={url} alt="Banner" width="100%" />}</div>
+          <div key={index}>
+            {<img src={url} alt="Banner" width="100%" height="350px" />}
+          </div>
         );
       })}
     </div>
