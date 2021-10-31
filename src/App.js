@@ -12,7 +12,7 @@ const App = () => {
   }
 
   const fetchData = async() => {
-    const {data} = await axios.get("/home")
+    const {data} = await axios.get("https://dev-api.fitnessfuel360.com/app/home")
     return data
   }
   
