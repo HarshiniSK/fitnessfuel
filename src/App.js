@@ -29,7 +29,8 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
-        <MainSection fetchData={fetchData} />
+        HELLLLOOOOOOO
+        {/* <MainSection fetchData={fetchData} /> */}
       </div>
     </QueryClientProvider>
   );
