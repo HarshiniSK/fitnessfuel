@@ -8,3 +8,15 @@
     <li>SliderItem: <a href = "https://github.com/HarshiniSK/fitnessfuel/blob/master/src/components/SliderItem/index.js">https://github.com/HarshiniSK/fitnessfuel/blob/master/src/components/SliderItem/index.js</a></li>
     <li>ArticleItem: <a href = "https://github.com/HarshiniSK/fitnessfuel/blob/master/src/components/ArticleItem/index.js">https://github.com/HarshiniSK/fitnessfuel/blob/master/src/components/ArticleItem/index.js</a></li>
 </ul>
+
+<h3>Images</h3>
+<img src = "https://github.com/HarshiniSK/fitnessfuel/blob/master/ss/image%20(1).png" alt = "Image Screenshot" />
+<br />
+<img src = "https://github.com/HarshiniSK/fitnessfuel/blob/master/ss/image%20(2).png" alt = "Image Screenshot" />
+<br />
+<img src = "https://github.com/HarshiniSK/fitnessfuel/blob/master/ss/image%20(3).png" alt = "Image Screenshot" />
+<br />
+<img src = "https://github.com/HarshiniSK/fitnessfuel/blob/master/ss/image%20(4).png" alt = "Image Screenshot" />
+<br />
+<img src = "https://github.com/HarshiniSK/fitnessfuel/blob/master/ss/image%20(5).png" alt = "Image Screenshot" />
+<br />
