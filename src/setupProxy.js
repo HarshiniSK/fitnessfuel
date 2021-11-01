@@ -6,6 +6,7 @@ module.exports = (app) => {
     createProxyMiddleware({
       target: "https://dev-api.fitnessfuel360.com/app/home",
       changeOrigin: true,
+      
     })
   );
 };
