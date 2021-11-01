@@ -1,7 +1,17 @@
+/*
+Slider Item Component - Each individial component of the Slider
+Image - Descriptive Image for the product
+Name - Display Name of the product
+MRP - Price (Before discount)
+SP - Proce (After Discount)
+Discount - Discount % of the product
+*/
+
+
 import "./styles.css";
+
 const SliderItem = ({ item }) => {
   const { image, name, mrp, sp, weight, discount } = item;
-  // console.log("Slider")
   return (
     <div className="box">
       <img
@@ -12,7 +22,6 @@ const SliderItem = ({ item }) => {
         onError={(e) => {
           e.target.onError = null;
           e.target.src =
-            // "https://ff360-media.s3.ap-south-1.amazonaws.com/inventory/4516443d94c741238b24307f3d96298d.jpg";
             "https://meatmarket.in/wp-content/uploads/2020/01/loading-bar-animated-gif-transparent-background-3.gif";
         }}
       />

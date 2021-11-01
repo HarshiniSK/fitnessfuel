@@ -1,14 +1,12 @@
-// const Banner = ({ item_ }) => {
-//   const {url} = item_
-// //   console.log(item, "++++++++++++++");
-//   return (
-//     <div>{<img src={url} alt="Banner" width="100%" height="50%" /> }</div>
-//   );
-// };
+/*
+Banner Component
+To display the banner type data from api
+As Banner in website stretched across the screen
+Url - Link Address of the image to be displayed as Banner
+*/
 
-// export default Banner;
+
 const Banner = ({ item_ }) => {
-  // console.log(item_.items)
   return (
     <div>
       {item_.items.map((item, index) => {

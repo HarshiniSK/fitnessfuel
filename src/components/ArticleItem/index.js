@@ -1,8 +1,17 @@
 import "./styles.css";
 
 const ArtcileItem = ({ item }) => {
+  /*
+  Component for single article 
+  Title - Title of the article
+  Sub Title - Description of the article
+  Publish Date - Date the article was published
+  Image - Descriptiove Image for the article
+  Views - No of views for the article
+  */
   const { title, sub_title, publish_date, image, views } = item;
 
+  // Changing the format of date into a readable format
   const dateExtractor = (date) => {
     let options = { year: "numeric", month: "long", day: "numeric" };
     let formatDate = "";

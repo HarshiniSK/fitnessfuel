@@ -1,17 +1,21 @@
+// Importing the required packages
 import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
+import ReactLoading from "react-loading";
 
+// Importing the components
 import Banner from "../Banner";
 import PopularItem from "../PopularItem";
 import Slider from "../Slider";
 
+// Importing the styling files
 import "./styles.css";
 
-import ReactLoading from "react-loading";
 
 const MainSection = ({ fetchData }) => {
   const [sections, setSections] = useState([]);
 
+  // Fetching the data using react query
   const { data, error, isError, isLoading } = useQuery("sections", fetchData);
 
   useEffect(() => {
@@ -22,6 +26,7 @@ const MainSection = ({ fetchData }) => {
       setSections(data.sections);
     }
   }, [data, error, isError, isLoading]);
+  // Loader Implementation
   if (isLoading) {
     return (
       <div
@@ -41,6 +46,7 @@ const MainSection = ({ fetchData }) => {
     <div className="main-section">
       {sections.map((item, index) => {
         const { type } = item;
+        // Rendering the required component based on the type of data section
         if (type === "slider") {
           return <Slider item_={item} key={index} />;
         } else if (type === "banner") {

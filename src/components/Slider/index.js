@@ -1,9 +1,11 @@
+import SliderS from "react-slick";
+
 import ArticleItem from "../ArticleItem";
 import SliderItem from "../SliderItem";
-import SliderS from "react-slick";
 
 import "./styles.css";
 
+// Configurations for the slider
 const settings = {
   dots: true,
   infinite: true,
@@ -43,18 +45,18 @@ const settings = {
 };
 
 const Slider = ({ item_ }) => {
+  // Rendering either normal SliderItem or ArticleItem based on the data item type
   const Item =
     item_.item_type && item_.item_type === "article" ? ArticleItem : SliderItem;
   return (
     <div className="main-item">
       <div className="title">{item_.header.title}</div>
-      {/* <div className="pop-prod"> */}
+      {/* Rendering the slider */}
       <SliderS {...settings}>
         {item_.items.map((item, index) => {
           return <Item item={item} key={index} />;
         })}
       </SliderS>
-      {/* </div> */}
     </div>
   );
 };

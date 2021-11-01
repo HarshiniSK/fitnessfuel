@@ -1,6 +1,11 @@
+/*
+Component for Popular type items - Popular Categories, Shop by Product Types, Popular Brands
+Header Title - Title for the data category
+Title - Description for each individual item
+*/
+
 import "./styles.css";
 
-// <div className="pop-item">{item.items[1].name}</div>
 
 const colors = ["#6583a8", "#6b7b8e", "#8fbbaf", "#acdeaa"];
 

@@ -6,7 +6,9 @@ import MainSection from "./components/MainSection";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // https://dev-api.fitnessfuel360.com/app/home
+  // API ENDPOINT: https://dev-api.fitnessfuel360.com/app/home
+
+  // Fetch the data from the api endpoint and pass it to the components
   const fetchData = async () => {
     const { data } = await axios.get(
       "https://dev-api.fitnessfuel360.com/app/home",
