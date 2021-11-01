@@ -6,11 +6,6 @@ import MainSection from "./components/MainSection";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const config = {
-    headers: {
-      Accept: "application/json",
-    },
-  };
   // https://dev-api.fitnessfuel360.com/app/home
   const fetchData = async () => {
     const { data } = await axios.get(
@@ -19,7 +14,6 @@ const App = () => {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          
         },
       }
     );
@@ -29,8 +23,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
-        HELLLLOOOOOOO
-        {/* <MainSection fetchData={fetchData} /> */}
+        <MainSection fetchData={fetchData} />
       </div>
     </QueryClientProvider>
   );
